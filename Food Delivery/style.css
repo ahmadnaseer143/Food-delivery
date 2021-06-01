@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    z-index: 1000;
+}
+header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+header ul li a:hover{
+    background-color: lightcoral;
+}
+.first-page,
+.third-page{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    background-image: url(food1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+.first-page h3{
+    font-weight: 700;
+    font-size: 2.5em;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    text-transform: uppercase;
+    color: white
+}
+.first-page h3:hover{
+    background-color: blue;
+}
+.first-page div{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background-color: transparent;
+    height: 60px;
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+}
+.first-page input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px 0 15px 0;
+    border:4px solid rgb(71, 255, 102);
+    margin: 15px ;
+    background-color: lightcyan;
+    color: rgb(124, 50, 50);
+    font-size: 1em;
+    font-weight: 700;
+}
+.first-page button{
+    height: 30px;
+    width: 70px;
+    border-radius: 15px 0 15px 0;
+    border:4px solid rgb(71, 255, 102);
+    background-color: lightcyan;
+    color: rgb(124, 50, 50);
+    font-size: 1em;
+    font-weight: 700;
+}
+.first-page button:hover{
+    height: 35px;
+    width: 80px;
+    background-color: lightseagreen;
+}
+::placeholder {
+    color: rgb(124, 50, 50);
+    opacity: 1;
+  }
+.second-page{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: lightcoral;
+}
+.second-page h3{
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: rgb(194, 112, 19);
+    width: 400px;
+}
+.second-page div img{
+    width: 220px;
+    height: 150px;
+    display: flex;
+}
+.second-page h2{
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: rgb(194, 112, 19);
+    text-align: center;
+}
+.second-page h2:hover,
+.second-page h3:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+}
+.third-page{
+    background: url(food2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third-page div h2{
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.third-page div p,
+.text ul li{
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: rgb(7, 200, 248);
+    text-align: center;
+}
+.third-page div p:hover,
+.third-page div h2:hover,
+.text ul li:hover{
+    background: rgb(83, 83, 175);
+    border-radius: 20px;
+}
+.text{
+    position: relative;
+    left: 35%;
+}
+.text ul{
+    padding:10px;
+    list-style: none;
+}
+.text ul li:hover{
+    font-size: 1.5em;
+}
+.fourth-page{
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 150px 100px 100px;
+    flex-wrap: wrap;
+}
+.fourth-page div h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.app-screen{
+    width: 350px;
+    float: left;
+}
+.works-step{
+    margin-bottom: 40px;
+}
+.works-step div{
+    color: crimson;
+    border: 2px solid crimson;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding-right: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+.works-step div:hover{
+    background-color: crimson;
+    color: white;
+}
+.works-step p{
+    font-size: 1em;
+    font-weight: 700;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+#btn-app img{
+    height: 120px;
+    position: relative;
+    bottom: -30px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    flex-wrap: wrap;
+}
+.insta-fb a{
+    background-color: #f5f6fa;
+    margin: 15px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    display: flex;
+}
+.insta-fb a:hover{
+    background:red;
+    border-radius: 20px;
+    box-shadow: 1px 4px 2px 2px rgb(23, 43, 133);
+    font-size: 1.5em;
+}
+.links a{
+    padding:15px ;
+    color: white;
+    display: flex;
+}
+.links a:hover{
+    background:red;
+    border-radius: 20px;
+}
+.body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("Naseer.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+}
+.container{
+    color:white;
+    background-color: white;
+    width: 500px;
+    height: 450px;
+    margin: 60px auto 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 35px;
+    border: 3px solid tomato;
+    border-radius: 70px 0 70px 0;
+}
+.image{
+    width: 50px;
+    height: 40px;
+    border:3px solid tomato;
+    border: 50%;
+    background: white;
+    position: absolute;
+    top: -5%;
+    left: 45%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.container input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px 0 15px 0;
+    border:2px solid tomato;
+    margin: 15px ;
+    background-color: transparent ;
+    color: #fff;
+}
+#log{
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+#log:hover{
+    background-color: black;
+}
+.container a{
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    
+}
+.a{
+    background-color: transparent;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.a:hover{
+    background:red;
+    border-radius: 20px;
+    box-shadow: 1px 4px 2px 2px rgb(23, 43, 133);
+    font-size: 2em;
+}
